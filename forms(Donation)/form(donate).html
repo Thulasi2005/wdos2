@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donation Form</title>
+        <link rel="stylesheet" href="form(donate).css">
+    </head>
+    <body>
+        <div class="background-img">
+            <div class="donation-container">
+              
+                <div class="donation-box">
+                    <div class="title">Donation Information</div>
+                    
+                    <div class="fields">
+                        <input type="text" id="firstName" placeholder="First Name"> </input>
+                        <input type="text" id="lastName" placeholder="Last Name"> </input>
+                        <input type="text" id="email" placeholder="Email"> </input>
+                    </div>
+                    
+                    <div class="amount">
+                        <div class="button">$40</div>
+                        <div class="button">$80</div>
+                        <div class="button">$100</div>
+                        <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+                    </div>
+                    
+                    <div class="switch">
+                        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+                        <label for="one-time" class="switch-label switch-label-off">AT ONCE</label>
+                        <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                        <label for="monthly" class="switch-label switch-label-on">MONTHLY</label>
+                        <span class="switch-selection"></span>
+                    </div>
+                    
+                    <div class="checkboxes">
+                        <input type="checkbox" id="receipt" class="checkbox" />
+                        <label for="receipt">Email Me A Receipt</label>
+                        <br />
+                        <input type="checkbox" id="anon" class="checkbox" />
+                        <label for="anon">Give Anonymously</label>
+                        
+                    </div>
+                    
+                    <div class="confirm">
+                        
+                    </div>
+                    
+                    <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
+</html>

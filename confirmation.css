@@ -1,0 +1,116 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+.background-image{
+     background-image: url(images/ticket_bg.png);
+      min-height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      position:relative;
+      padding:25px
+  }
+  
+  body {
+    font-family: 'Codystar';
+    background: beige;   
+  }
+  
+  
+  h1{
+      font-size: medium;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+   .neons {
+      margin-top: 10rem;
+      text-align: center;
+   }
+   
+   .neons h1 {
+     font-size: 7rem;
+     text-align: center;
+      font-weight: bold;
+     animation: glow 2s ease-in-out infinite alternate;
+   }
+   
+  @keyframes glow {
+        from {
+         color: #fff;
+       text-shadow: 0px 0px 10px #00fff2, 0px 0px 20px #00fff2, 0px 0px 30px #00fff2, 0px 0px 40px #00fff2, 0px 0px 50px #00fff2, 0px 0px 60px #00fff2, 0px 0px 70px #00fff2, 0px 0px 90px #00fff2;
+     }
+     
+     to {
+        color: gray;
+       text-shadow: 0px 0px 20px #00fff2, 0px 0px 30px #00fff2, 0px 0px 40px #00fff2, 0px 0px 50px #00fff2, 0px 0px 60px #00fff2, 0px 0px 70px #00fff2, 0px 0px 80px #00fff2, 0px 1px 90px #00fff2;
+     }
+   
+   }
+   
+  *{
+      margin:0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  .container{
+      
+      margin:20px;
+      width:auto;
+  }
+  
+  .topnav{
+      overflow:hidden;
+      background-color: black;
+  }
+  
+  .topnav a{
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      border-right: 1px solid grey;;
+  
+  }
+  
+  .topnav a:hover{
+      background-color: #09242d;
+      color:beige
+  }
+  
+  
+  .active{
+      background-color: lavender;
+  }
+  
+  #div1{
+      justify-content: center;
+      display: flex;
+  }
+  
+  #body1{
+      background-color: beige;
+  }
+
+  #div2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+  }
+ 
+  #div2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+  }
+
+  p{
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }

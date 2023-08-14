@@ -1,0 +1,215 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.background-image{
+    background-image: url(images/img2.png);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    padding:25px;
+}
+
+body {
+    font-family: 'Codystar';
+    background: beige;   
+}
+
+
+h1{
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ .neons {
+    margin-top: 10rem;
+    text-align: center;
+ }
+ 
+ .neons h1 {
+   font-size: 7rem;
+   text-align: center;
+    font-weight: bold;
+   animation: glow 2s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes glow {
+      from {
+       color: #fff;
+     text-shadow: 0px 0px 10px #00fff2, 0px 0px 20px #00fff2, 0px 0px 30px #00fff2, 0px 0px 40px #00fff2, 0px 0px 50px #00fff2, 0px 0px 60px #00fff2, 0px 0px 70px #00fff2, 0px 0px 90px #00fff2;
+   }
+   
+   to {
+      color: gray;
+     text-shadow: 0px 0px 20px #00fff2, 0px 0px 30px #00fff2, 0px 0px 40px #00fff2, 0px 0px 50px #00fff2, 0px 0px 60px #00fff2, 0px 0px 70px #00fff2, 0px 0px 80px #00fff2, 0px 1px 90px #00fff2;
+   }
+ 
+ }
+ 
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+
+.container{
+    position: absolute;
+    margin:20px;
+    width:auto;
+}
+
+.topnav{
+    overflow:hidden;
+    background-color: black;
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid grey;;
+
+}
+
+.topnav a:hover{
+    background-color: #09242d;
+    color:beige
+}
+
+
+.active{
+    background-color: lavender;
+}
+
+#div1{
+    justify-content: center;
+}
+
+
+#div2{
+    text-align: center;
+}
+
+#p1, #p2,#p3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#a1:link, #a1:visited, #a1a:link, #a1a:visited{
+    background-color:rgb(205, 207, 218);
+    color: black;
+    padding:14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#a1:hover,#a1a:hover, #a-hover{
+    background-color: rgb(55, 42, 80);
+}
+
+#div3, #div4{
+    text-align: center;
+}
+
+#table1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    font-size: large;
+}
+
+th, #th1{
+    font-size: larger;
+}
+
+#div5{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+}
+
+footer{
+    background-color: #EFDCCC;
+    color: brown;
+    bottom: 0;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer *{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.flex-container1{
+    display: flex;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#DIVF, #divf1, #divf2{
+    text-align: center;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#DIVF{
+    padding-right: 25px;
+}
+
+#footer_link1, #footer_link2, #footer_link3, #footer_link4, #footer_link5, #footer_link6, #footer_link7, #footer_link8{
+    text-decoration: none;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 200px;
+}
+
+#divf2{
+    padding-left: 115px;
+}
+
+#footer_link9, #footer_link10, #footer_link11, #footer_link12{
+    text-decoration: none;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 115px;
+}
+
+#footer_link9:link, #footer_link9:visited, #footer_link10:link, #footer_link10:visited, #footer_link11:link, #footer_link11:visited, #footer_link12:link, #footer_link12:visited{
+    background-color:#D1B7A1;
+    color: white;
+    padding:14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   
+}
+
+#footer_link9:hover, #footer_link10:hover, #footer_link11:hover, #footer_link12:hover, #a-hover{
+    background-color:#A18167;
+}
+
+#divf3, #divfc{
+    text-align: right;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 0px;
+}
+
+#citation1,#citation2, #citation3{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+

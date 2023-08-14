@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Payment Page</title>
+        <link rel="stylesheet" href="payment.css">
+        <meta charset="utf-8">
+        <!--<meta name="viewport"
+        content="width=device-width, inital-scale=1">-->
+    </head>
+    <body>
+        <div class="header">
+        <div class="background-image">
+                <div class="row">
+                    <div class="neons col-12">
+<h1><b>PAYMENT</b></h1></div></div><br><br>
+<div id="div1" class="container">
+    <div class="topnav">
+        <a href="index.html">HOME PAGE</a>
+        <a href="ticketpage.html">TICKETS PAGE</a>
+        <a href="details.html">DETAILS PAGE</a>
+        <a href="payment.html">PAYMENT PAGE</a>
+        <a href="confirmation.html">CONFIRMATION PAGE</a>
+     </div>
+</div>
+</div>
+        </div>
+    <br><br>
+    <div id="div2">
+        <h2><b><u>PAYMENT DETAILS</u></b></h2> 
+    </div><br><br>
+    <div class="fieldset-container">
+        <fieldset id="details">
+            <legend>Details</legend>
+            <div class="details">
+                <div class="iti">
+                    <label>NAME ON CARD</label><br>
+                    <input type="text" id="cardName" name="cardName" required>
+                </div>
+                <br><br>
+                <div class="iti">
+                    <label for="phone">CREDIT CARD NUMBER</label><br>
+                    <input type="text" id="creditNum" name="phone" required>
+                </div>
+                <br><br>
+                <div class="iti">
+                    <label>EXPIRY DATE</label><br>
+                    <input type="text" id="expDate" name="expDate" required><br><br>
+
+                    <label>CVV</label><br>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <br><br>
+                <button type="button" id="submit" onclick="submitButton()">Submit</button>
+        </div>
+        </fieldset>
+        <fieldset>
+            <table id="userDataTable">
+                <thead>
+                  <tr>
+                    <th>Full Name</th>
+                    <th>Mobile Phone</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                  </tr>
+                </thead>
+                <tbody id="userDataBody">
+                  <!-- User data rows will be inserted here -->
+                </tbody>
+              </table>
+        </fieldset>
+        <button type="confirm" id="confirm" onclick="confirmOrder()">Confirm Order</button>
+    <br><br>
+    <script>  
+    function confirmOrder(){
+      window.location.href="confirmation.html";
+    }  
+    function submitButton() {
+    const NameonCard = document.getElementById("cardName").value;
+    const CreditcardNumber = document.getElementById("creditNum").value;
+    const ExpiryDate = document.getElementById("expDate").value;
+    const CVV = document.getElementById("cvv").value;
+  
+    const userData = {
+      NameonCard: NameonCard,
+      CreditcardNumber: CreditcardNumber,
+      ExpiryDate: ExpiryDate,
+      CVV: CVV
+    };
+  
+    // Store the user data in localStorage
+    localStorage.setItem("userData", JSON.stringify(userData));
+    
+    displayUserData(); // Call the function to display user data
+  }
+  function displayUserData() {
+    const userDataString = localStorage.getItem("userData");
+    if (userDataString) {
+      const userData = JSON.parse(userDataString);
+      const userDataBody = document.getElementById("userDataBody");
+  
+      // Create a new row and cells to display the user data
+      const newRow = document.createElement("tr");
+      for (const property in userData) {
+        const newCell = document.createElement("td");
+        newCell.textContent = userData[property];
+        newRow.appendChild(newCell);
+      }
+  
+      // Append the row to the table body
+      userDataBody.appendChild(newRow);
+    }
+  }
+        paybtn.addEventListener("click", () => {
+            window.location.href = "confirmation.html";
+        });
+    </script>
+    
+
+</body>
+</html>
